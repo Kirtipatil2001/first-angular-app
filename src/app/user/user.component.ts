@@ -1,4 +1,4 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, Input, computed, input, signal } from '@angular/core';
 
 import { DUMMY_USERS } from '../dummy-users';
 
@@ -10,13 +10,17 @@ import { DUMMY_USERS } from '../dummy-users';
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
+
 export class UserComponent {
-  @input() avatar!: string;
-@input()
+  @Input() avatar!: string;
+  @Input() name!: string;
 
-      onSelectUser(){}
+  get imagePath(){
+    return 'assets/users/' + this.avatar;
+  }
+   onSelectUser(){}
 
-    }
+    }  
 
     
      // const randomIndex = Math.floor(Math.random()  *DUMMY_USERS.length)
