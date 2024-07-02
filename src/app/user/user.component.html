@@ -3,8 +3,8 @@
         <!--img [src]="'assets/users/' + selectedUser.avatar"-->
         <!--<img [src]="imagePath"   imagepath is a property--->
 
-        <img [src]="imagePath" [alt]="name"/>
-        <span>{{name}}</span>
+        <img [src]="imagePath()" [alt]="name"/>
+        <span>{{ name }}</span>
     </button>
 </div>
  
