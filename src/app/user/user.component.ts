@@ -4,20 +4,21 @@ import { DUMMY_USERS } from '../dummy-users';
 
 
 //TYPE ALIASES CONCEPT
-//type User = {
-  //id: string;
-   // avatar:string;
-    //name:string;
-//}
+type User = {
+  id: string;
+ avatar:string;
+name:string;
+}
 //const randomIndex = Math.floor(Math.random()  *DUMMY_USERS.length)
 
 // INTERFACE CONCEPT 
 
-interface User{
-  id: string;
-  avatar:string;
-  name:string;
-}
+//interface User{
+  //id: string;
+ // avatar:string;
+  //name:string;
+//}
+
 @Component({
   selector: 'app-user',
   standalone: true,
