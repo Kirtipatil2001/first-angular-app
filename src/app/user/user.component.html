@@ -1,10 +1,7 @@
-<div>
-    <button (click)="onSelectUser()">
-        <!--img [src]="'assets/users/' + selectedUser.avatar"-->
-        <!--<img [src]="imagePath"   imagepath is a property--->
-
-        <img [src]="imagePath()" [alt]="user.name"/>
-        <span>{{ user.name }}</span>
+<app-card>
+    <button [class.active]="selected" (click)="onSelectUser()">
+      <img [src]="imagePath" [alt]="user.name" />
+      <span>{{ user.name }}</span>
     </button>
-</div>
- 
+  </app-card>
+  
